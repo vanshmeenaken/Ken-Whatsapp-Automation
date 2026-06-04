@@ -11,10 +11,6 @@ services:
         sync: false
       - key: PERISKOPE_ORG_PHONE
         sync: false
-      - key: SUPABASE_URL
-        sync: false
-      - key: SUPABASE_KEY
-        sync: false
       - key: API_ENV
         value: production
       - key: LOG_LEVEL
