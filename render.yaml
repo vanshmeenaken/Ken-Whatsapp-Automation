@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ken-whatsapp-campaigns
+    env: python
+    region: singapore
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PERISKOPE_API_KEY
+        sync: false
+      - key: PERISKOPE_ORG_PHONE
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: API_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: MAX_BATCH_SIZE
+        value: "500"

@@ -1,0 +1,19 @@
+{
+  "templates": [
+    {
+      "id": "welcome",
+      "name": "Welcome Message",
+      "text": "Hi {{first_name}}, welcome to our WhatsApp channel! We're {{company}}."
+    },
+    {
+      "id": "offer",
+      "name": "Special Offer",
+      "text": "Hi {{first_name}}, {{company}} has an exclusive offer just for you."
+    },
+    {
+      "id": "followup",
+      "name": "Follow-up",
+      "text": "{{first_name}}, just following up on our earlier conversation. {{company}} is here to help!"
+    }
+  ]
+}
